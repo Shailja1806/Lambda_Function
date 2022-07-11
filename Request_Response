@@ -1,0 +1,9 @@
+Payload
+{ 'CustomerId':'123',
+   'Amount'   :'50' 
+}
+Response
+(  'CustomerId':'123',
+   'TransactionId':'abc',
+   'Success':true/false 
+}
