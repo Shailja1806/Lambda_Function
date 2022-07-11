@@ -1,0 +1,14 @@
+import json
+import uuid
+def lambda_handler(event , context):
+#1 - Read off the input arguements 
+    CustomerId = event['CustomerId']
+
+# 2 - Generate a random id
+    transactionId = str(uuid.uuid1())
+
+# 3- Do some stuff i.e save to s3 , write to database etc 
+
+#4 - Format and return response 
+return {'CustomerId' : CustomerId , 'Success': 'true' , 'TransactionId':transactionId }
+
